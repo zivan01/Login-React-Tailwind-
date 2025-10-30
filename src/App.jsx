@@ -57,7 +57,7 @@ const App = () => {
                     autoComplete="username"
                     value={username}
                     onChange={(e) => setUsername(e.target.value)}
-                    className="w-full rounded-xl border border-slate-300 bg-white/60 px-4 py-3 outline-none transition focus:border-indigo-500 focus:ring-2 focus:ring-indigo-500/40 dark:border-slate-600 dark:bg-slate-900/40 dark:focus:border-indigo-400"
+                    className="w-full placeholder-white text-white rounded-xl border border-slate-300 bg-white/60 px-4 py-3 outline-none transition focus:border-indigo-500 focus:ring-2 focus:ring-indigo-500/40 dark:border-slate-600 dark:bg-slate-900/40 dark:focus:border-indigo-400"
                     placeholder="e.g., johndoe"
                   />
                 </div>
@@ -78,7 +78,7 @@ const App = () => {
                       autoComplete="current-password"
                       value={password}
                       onChange={(e) => setPassword(e.target.value)}
-                      className="w-full rounded-xl border border-slate-300 bg-white/60 px-4 py-3 pr-12 outline-none transition focus:border-indigo-500 focus:ring-2 focus:ring-indigo-500/40 dark:border-slate-600 dark:bg-slate-900/40 dark:focus:border-indigo-400"
+                      className="w-full placeholder-white text-white rounded-xl border border-slate-300 bg-white/60 px-4 py-3 pr-12 outline-none transition focus:border-indigo-500 focus:ring-2 focus:ring-indigo-500/40 dark:border-slate-600 dark:bg-slate-900/40 dark:focus:border-indigo-400"
                       placeholder="••••••••"
                     />
                     <button
@@ -146,7 +146,7 @@ const App = () => {
                   type="submit"
                   className="group relative w-full overflow-hidden rounded-xl bg-gradient-to-br from-indigo-600 to-blue-600 px-4 py-3.5 font-medium text-white shadow-lg transition hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
                 >
-                  <span className="relative z-10">Sign in</span>
+                  <span className="relative z-10 cursor-pointer">Sign in</span>
                   <span className="absolute inset-0 -translate-x-full bg-white/20 transition group-hover:translate-x-0 cursor-pointer" />
                 </button>
 
@@ -199,4 +199,6 @@ const App = () => {
 };
 
 export default App;
+
+
 
